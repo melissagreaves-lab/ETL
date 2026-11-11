@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#14263d">
+<title>Future of Events Summit 2027 | Programme</title>
+<style>
+:root{--navy:#14263d;--ink:#1d2d40;--muted:#64748b;--line:#dce4ed;--paper:#f4f7fb;--white:#fff;--teal:#087e83;--teal2:#e5f5f4;--gold:#d99b35;--shadow:0 8px 28px rgba(20,38,61,.08);--radius:16px}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #68c4c7;outline-offset:2px}
+.hero{background:linear-gradient(115deg,#14263d,#1b4057 68%,#087e83);color:white;padding:30px max(22px,calc((100vw - 1380px)/2)) 26px}.hero-inner{max-width:1380px;margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:800;color:#9edbd8}.hero h1{font-size:clamp(26px,4vw,42px);line-height:1.12;margin:9px 0}.hero p{margin:7px 0 0;color:#d4e4ed}.hero-meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13px;color:#e0edf2}
+.shell{max-width:1380px;margin:auto;padding:22px}.statusbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:15px;color:var(--muted);font-size:13px}.status-dot{width:9px;height:9px;border-radius:50%;background:#d89b35;display:inline-block}.status-dot.ok{background:#20a16b}.status-dot.err{background:#c84b4b}.statusbar .spacer{flex:1}
+.btn{border:1px solid var(--line);background:white;color:var(--ink);padding:9px 13px;border-radius:10px;font-weight:650;font-size:13px}.btn:hover{border-color:#7bbabc;background:#f4fbfb}.btn.primary{background:var(--teal);color:white;border-color:var(--teal)}.btn.primary:hover{background:#066c70}.btn.dark{background:var(--navy);color:white;border-color:var(--navy)}.btn.small{padding:6px 9px;font-size:12px}.btn:disabled{opacity:.5;cursor:not-allowed}
+.nav{display:flex;gap:7px;border-bottom:1px solid var(--line);margin-bottom:18px}.nav button{border:0;background:none;padding:12px 17px;color:var(--muted);font-weight:750;border-bottom:3px solid transparent}.nav button.active{color:var(--teal);border-color:var(--teal)}
+.toolbar{display:grid;grid-template-columns:minmax(220px,1.7fr) repeat(4,minmax(135px,1fr)) auto;gap:9px;margin-bottom:15px}.field{width:100%;border:1px solid var(--line);background:white;border-radius:10px;padding:10px 12px;color:var(--ink);min-width:0}.searchwrap{position:relative}.searchwrap input{padding-left:36px}.searchwrap:before{content:"⌕";position:absolute;left:12px;top:6px;font-size:23px;color:var(--muted)}
+.daybar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}.daybtn{padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:white;color:var(--muted);font-size:13px;font-weight:700}.daybtn.active{background:var(--navy);border-color:var(--navy);color:white}.viewtoggle{margin-left:auto;display:flex;gap:5px}.viewtoggle .active{background:var(--teal2);border-color:#9dd1cf;color:#056c70}
+.summary{display:flex;justify-content:space-between;gap:10px;align-items:center;margin:12px 0;color:var(--muted);font-size:13px}.session-list{display:grid;gap:11px}.session{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:16px 17px;box-shadow:0 2px 7px rgba(20,38,61,.025);display:grid;grid-template-columns:112px minmax(0,1fr) auto;gap:16px;align-items:start}.session:hover{border-color:#9cc9c9;box-shadow:var(--shadow)}.time{font-variant-numeric:tabular-nums;font-weight:800;color:var(--navy);font-size:14px}.time span{display:block;color:var(--muted);font-weight:500;font-size:12px;margin-top:3px}.session h3{margin:0 0 6px;font-size:17px;line-height:1.3}.session p{margin:5px 0;color:var(--muted);font-size:13px}.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}.chip{display:inline-flex;align-items:center;padding:3px 8px;border-radius:6px;background:#edf3f7;color:#42566a;font-size:11px;font-weight:750}.chip.track{background:#e4f4f3;color:#076d70}.chip.room{background:#f4f0e8;color:#80602c}.chip.type{background:#edf0fa;color:#4a568b}.session-actions{display:flex;flex-direction:column;gap:7px;align-items:flex-end}.empty{padding:44px 20px;text-align:center;background:white;border:1px dashed #cbd5e1;border-radius:var(--radius);color:var(--muted)}.empty strong{display:block;color:var(--ink);font-size:17px;margin-bottom:5px}
+.calendar-wrap{overflow:auto;background:white;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.calendar{min-width:850px;display:grid;position:relative}.cal-head{position:sticky;top:0;z-index:4;background:#f8fafc;border-bottom:1px solid var(--line);display:grid}.cal-head>div{padding:12px 8px;text-align:center;font-size:12px;font-weight:800;border-left:1px solid var(--line)}.cal-head .blank{border:0}.cal-body{display:grid;position:relative}.cal-times{position:relative;background:#fbfcfe;border-right:1px solid var(--line)}.cal-time{position:absolute;right:8px;transform:translateY(-50%);font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}.cal-lane{position:relative;border-right:1px solid var(--line);background:repeating-linear-gradient(to bottom,transparent 0,transparent 59px,#e9eef4 60px)}.cal-event{position:absolute;left:4px;right:4px;border-radius:8px;padding:7px 8px;overflow:hidden;background:#e2f2f1;border-left:4px solid var(--teal);color:#17484a;text-align:left;font-size:11px;line-height:1.3;z-index:2}.cal-event strong{display:block;font-size:12px;margin-bottom:3px}.cal-event span{display:block;opacity:.85}.cal-event:hover{filter:brightness(.97);z-index:3}
+.warning{background:#fff7e8;border:1px solid #f1d49c;color:#76531c;padding:11px 14px;border-radius:11px;font-size:13px;margin:12px 0}.warning strong{color:#65430f}.saved-count{background:#e3f4f2;color:#076d70;border-radius:99px;padding:2px 8px;font-size:11px;margin-left:4px}
+.modal-backdrop{position:fixed;inset:0;background:rgba(10,24,40,.58);z-index:20;display:none;align-items:center;justify-content:center;padding:18px}.modal-backdrop.open{display:flex}.modal{width:min(780px,100%);max-height:90vh;overflow:auto;background:white;border-radius:18px;box-shadow:0 25px 80px rgba(0,0,0,.25)}.modal-head{padding:20px 22px;border-bottom:1px solid var(--line);position:sticky;top:0;background:white;z-index:2}.modal-head h2{margin:0 36px 6px 0;font-size:22px;line-height:1.25}.modal-head p{margin:0;color:var(--muted);font-size:13px}.modal-close{position:absolute;right:15px;top:14px;border:0;background:#f1f5f9;border-radius:50%;width:34px;height:34px;font-size:20px}.modal-body{padding:20px 22px}.detail-desc{color:#506174;margin:0 0 15px}.presentation{border:1px solid var(--line);border-radius:12px;padding:13px;margin:11px 0}.presentation h4{margin:0 0 5px;font-size:15px}.presentation .pres-time{font-size:12px;color:var(--teal);font-weight:800}.person{display:inline-block;background:#f3f6f9;border-radius:8px;padding:7px 9px;margin:5px 5px 0 0;font-size:12px}.person b{display:block;color:var(--ink)}.person span{color:var(--muted)}
+.footer{text-align:center;padding:28px 10px 15px;color:#8793a2;font-size:11px}.hidden{display:none!important}
+@media(max-width:900px){.toolbar{grid-template-columns:repeat(2,minmax(0,1fr))}.searchwrap{grid-column:1/-1}.session{grid-template-columns:90px minmax(0,1fr)}.session-actions{grid-column:2;flex-direction:row;align-items:center;flex-wrap:wrap}.viewtoggle{margin-left:0}}
+@media(max-width:560px){.hero{padding:24px 18px}.shell{padding:15px}.hero-meta{gap:8px 14px}.toolbar{grid-template-columns:1fr 1fr}.session{grid-template-columns:1fr;gap:7px;padding:14px}.time span{display:inline;margin-left:7px}.session-actions{grid-column:1;flex-direction:row;align-items:center}.session h3{font-size:16px}.nav button{padding:11px 12px;font-size:13px}.summary{align-items:flex-start;flex-direction:column}.viewtoggle{width:100%}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="hero-inner"><div class="eyebrow">The programme</div><h1>Future of Events Summit 2027</h1><p>Ideas, people and technology shaping the future of events.</p><div class="hero-meta"><span>📅 12–14 May 2027</span><span>📍 Toronto, Ontario, Canada</span><span>🕒 Eastern Time · America/Toronto</span></div></div></header>
+<main class="shell">
+<div class="statusbar" role="status" aria-live="polite"><span class="status-dot" id="statusDot"></span><span id="statusText">Connecting to the latest programme…</span><span class="spacer"></span><span id="updatedAt"></span><button class="btn small" id="refreshBtn">↻ Refresh programme</button></div>
+<nav class="nav" aria-label="Main navigation"><button class="active" data-tab="programme">Programme</button><button data-tab="calendar">Calendar</button><button data-tab="mine">My Agenda <span class="saved-count" id="savedCount">0</span></button></nav>
+<section id="programmeView">
+<div class="toolbar">
+<div class="searchwrap"><input class="field" id="search" type="search" placeholder="Search sessions, presentations, speakers…" aria-label="Search programme"></div>
+<select class="field" id="trackFilter" aria-label="Filter by track"><option value="">All tracks</option></select>
+<select class="field" id="roomFilter" aria-label="Filter by room"><option value="">All rooms</option></select>
+<select class="field" id="typeFilter" aria-label="Filter by session type"><option value="">All session types</option></select>
+<select class="field" id="audienceFilter" aria-label="Filter by audience level"><option value="">All audience levels</option></select>
+<button class="btn" id="clearFilters">Clear filters</button>
+</div>
+<div class="daybar" id="days"></div>
+<div class="summary"><span id="resultCount">Loading sessions…</span><div class="viewtoggle"><button class="btn small active" data-mode="list">☷ List view</button><button class="btn small" data-mode="calendar">▦ Calendar view</button></div></div>
+<div id="sessionList" class="session-list"></div>
+<div id="calendarView" class="calendar-wrap hidden"></div>
+</section>
+<section id="calendarPage" class="hidden">
+<div class="daybar" id="calDays"></div><div class="summary"><span id="calSummary">Choose a day to explore the programme by room and time.</span></div><div id="fullCalendar" class="calendar-wrap"></div>
+</section>
+<section id="mineView" class="hidden">
+<div class="summary"><span id="mineSummary">Your saved sessions appear here.</span><button class="btn primary" id="downloadMine">↓ Download My Agenda (.ics)</button></div>
+<div id="overlapWarnings"></div><div class="daybar" id="mineDays"></div><div id="mineList" class="session-list"></div>
+</section>
+<div class="footer">Future of Events Summit 2027 · Programme times shown in America/Toronto</div>
+</main>
+<div class="modal-backdrop" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><div class="modal-head"><button class="modal-close" id="modalClose" aria-label="Close details">×</button><h2 id="modalTitle"></h2><p id="modalMeta"></p></div><div class="modal-body" id="modalBody"></div></div></div>
+<script>
+"use strict";
+const CSV_URL="https://docs.google.com/spreadsheets/d/e/2PACX-1vT6GO0IA_YWsJwTQpI-zEajpLshfouKbHr26imDe54IsKmbYSN0LSIHdjjtbQFlLaYzNdyUUuw1qI8k/pub?gid=0&single=true&output=csv";
+const TZ="America/Toronto", DAYS=["2027-05-12","2027-05-13","2027-05-14"];
+const dayNames=["Wednesday 12 May","Thursday 13 May","Friday 14 May"];
+const $=id=>document.getElementById(id);
+let sessions=[],saved=new Set(readSaved()),activeDay="all",mineDay="all",activeTab="programme",mode="list",lastFocus=null;
+function readSaved(){try{return JSON.parse(localStorage.getItem("foes27-my-agenda")||"[]")}catch{return []}}
+function persistSaved(){try{localStorage.setItem("foes27-my-agenda",JSON.stringify([...saved]))}catch(e){console.warn("localStorage unavailable",e)}}
+function csvParse(text){
+ const rows=[];let row=[],field="",quoted=false;
+ for(let i=0;i<text.length;i++){const c=text[i],n=text[i+1];
+  if(quoted){if(c==='"'&&n==='"'){field+='"';i++}else if(c==='"')quoted=false;else field+=c}
+  else if(c==='"'&&field==="")quoted=true;
+  else if(c===","){row.push(field);field=""}
+  else if(c==="\n"){row.push(field);rows.push(row);row=[];field=""}
+  else if(c!=="\r")field+=c;
+ }
+ if(quoted)throw Error("The programme CSV contains an unterminated quoted field.");
+ if(field!==""||row.length){row.push(field);rows.push(row)}
+ return rows.filter(r=>r.some(v=>v.trim()!==""));
+}
+function clean(v){return String(v??"").trim()}
+function minutes(t){const m=clean(t).match(/^(\d{1,2}):(\d{2})(?::\d{2})?$/);if(!m)return NaN;return +m[1]*60+(+m[2])}
+function validDate(s){return /^\d{4}-\d{2}-\d{2}$/.test(s)&&!Number.isNaN(Date.parse(s+"T12:00:00Z"))}
+function parseProgramme(text){
+ const rows=csvParse(text);if(rows.length<2)throw Error("The published programme is empty.");
+ const headers=rows[0].map(clean);
+ // The supplied export has a row-reference column followed by the real fields.
+ // Support both the known shifted export and a correctly headed export.
+ const known=headers[1]==="Date"&&headers[2]==="Session Start Time";
+ const idx=known?{sid:1,date:2,ss:3,se:4,st:5,typ:6,track:7,room:8,sd:9,pid:10,ps:11,pe:12,pt:13,name:14,aff:15,aud:16,tz:17,role:18,part:19}:null;
+ if(!idx)throw Error("Unrecognised CSV headings. Expected the published programme export format.");
+ const map=new Map(),presMap=new Map(),partsSeen=new Set(),issues=[];
+ for(let ri=1;ri<rows.length;ri++){
+  const r=rows[ri];if(r.length<20){issues.push(`Row ${ri+1} has ${r.length} columns; expected 20.`);continue}
+  const v=k=>clean(r[idx[k]]);
+  const sid=v("sid"),pid=v("pid"),part=v("part");
+  if(!sid||!pid||!part){issues.push(`Row ${ri+1} is missing a session, presentation or participation ID.`);continue}
+  const sdata={id:sid,date:v("date"),start:v("ss"),end:v("se"),title:v("st"),type:v("typ"),track:v("track"),room:v("room"),description:v("sd"),audience:v("aud"),presentations:[]};
+  if(!map.has(sid))map.set(sid,sdata);
+  else {const old=map.get(sid);for(const k of ["date","start","end","title","type","track","room","description","audience"])if(old[k]!==sdata[k])issues.push(`Session ${sid} has conflicting ${k} values.`)}
+  const pdata={id:pid,start:v("ps"),end:v("pe"),title:v("pt"),participants:[]};
+  if(!presMap.has(pid)){presMap.set(pid,{...pdata,sessionId:sid});}
+  else {const old=presMap.get(pid);if(old.sessionId!==sid||old.title!==pdata.title||old.start!==pdata.start||old.end!==pdata.end)issues.push(`Presentation ${pid} has conflicting details or parent sessions.`)}
+  const person={name:v("name"),affiliation:v("aff"),role:v("role"),audience:v("aud"),timezone:v("tz"),participationId:part};
+  if(!partsSeen.has(part)){presMap.get(pid).participants.push(person);partsSeen.add(part)}
+  else issues.push(`Duplicate Participation ID ${part}.`);
+ }
+ for(const p of presMap.values()){
+  if(!map.has(p.sessionId)){issues.push(`Presentation ${p.id} refers to missing session ${p.sessionId}.`);continue}
+  map.get(p.sessionId).presentations.push(p);
+ }
+ const out=[...map.values()];
+ for(const s of out){
+  if(!validDate(s.date)||!Number.isFinite(minutes(s.start))||!Number.isFinite(minutes(s.end))||minutes(s.end)<=minutes(s.start))issues.push(`Session ${s.id} has an invalid date or time.`);
+  if(!s.title)issues.push(`Session ${s.id} has no title.`);
+  for(const p of s.presentations){if(!Number.isFinite(minutes(p.start))||!Number.isFinite(minutes(p.end))||minutes(p.end)<=minutes(p.start))issues.push(`Presentation ${p.id} has invalid timing.`);else if(minutes(p.start)<minutes(s.start)||minutes(p.end)>minutes(s.end))issues.push(`Presentation ${p.id} falls outside session ${s.id}.`)}
+  s.presentations.sort((a,b)=>minutes(a.start)-minutes(b.start));
+ }
+ out.sort((a,b)=>a.date.localeCompare(b.date)||minutes(a.start)-minutes(b.start)||a.room.localeCompare(b.room));
+ return {sessions:out,issues,counts:{sessions:out.length,presentations:presMap.size,people:new Set([...presMap.values()].flatMap(p=>p.participants.map(x=>x.name))).size,participations:partsSeen.size}};
+}
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function fmtDate(d){const dt=new Date(d+"T12:00:00");return new Intl.DateTimeFormat("en-CA",{weekday:"long",day:"numeric",month:"long",timeZone:TZ}).format(dt)}
+function timeLabel(s){return `${s.start}–${s.end}`}
+function allPeople(s){const seen=new Set(),a=[];for(const p of s.presentations)for(const x of p.participants)if(!seen.has(x.participationId)){seen.add(x.participationId);a.push(x)}return a}
+function sessionMatches(s){
+ const q=$("search").value.trim().toLowerCase(),track=$("trackFilter").value,room=$("roomFilter").value,type=$("typeFilter").value,aud=$("audienceFilter").value;
+ if(activeDay!=="all"&&s.date!==activeDay)return false;
+ if(track&&s.track!==track||room&&s.room!==room||type&&s.type!==type||aud&&s.audience!==aud)return false;
+ if(!q)return true;
+ const people=allPeople(s),hay=[s.title,s.description,s.track,s.room,s.type,s.audience,...s.presentations.flatMap(p=>[p.title,p.description,...p.participants.flatMap(x=>[x.name,x.affiliation,x.role])])].join(" ").toLowerCase();
+ return hay.includes(q);
+}
+function fillFilters(){
+ for(const [id,key] of [["trackFilter","track"],["roomFilter","room"],["typeFilter","type"],["audienceFilter","audience"]]){
+  const el=$(id),val=el.value,vals=[...new Set(sessions.map(s=>s[key]).filter(Boolean))].sort();
+  el.innerHTML=`<option value="">All ${key==="type"?"session types":key==="audience"?"audience levels":key+"s"}</option>`+vals.map(v=>`<option>${esc(v)}</option>`).join("");el.value=vals.includes(val)?val:"";
+ }
+}
+function makeDays(target,selected,handler,all=true){
+ const el=$(target);el.innerHTML="";
+ if(all){const b=document.createElement("button");b.className="daybtn"+(selected==="all"?" active":"");b.textContent="All days";b.onclick=()=>handler("all");el.append(b)}
+ DAYS.forEach((d,i)=>{const b=document.createElement("button");b.className="daybtn"+(selected===d?" active":"");b.textContent=dayNames[i];b.onclick=()=>handler(d);el.append(b)});
+}
+function renderSession(s,showAdd=true){
+ const isSaved=saved.has(s.id),people=allPeople(s),names=[...new Set(people.map(p=>p.name).filter(Boolean))];
+ const card=document.createElement("article");card.className="session";
+ card.innerHTML=`<div class="time">${esc(timeLabel(s))}<span>${esc(fmtDate(s.date))}</span></div><div><h3>${esc(s.title)}</h3><p>${esc(names.slice(0,4).join(" · "))}${names.length>4?` +${names.length-4} more`:""}</p><div class="chips"><span class="chip track">${esc(s.track)}</span><span class="chip room">${esc(s.room)}</span><span class="chip type">${esc(s.type)}</span>${s.audience?`<span class="chip">${esc(s.audience)}</span>`:""}</div></div><div class="session-actions"><button class="btn small" data-details>Details</button>${showAdd?`<button class="btn small ${isSaved?"":"primary"}" data-save>${isSaved?"✓ Added":"＋ My Agenda"}</button>`:""}<button class="btn small" data-ics>↓ .ics</button></div>`;
+ card.querySelector("[data-details]").onclick=()=>openDetails(s);
+ const save=card.querySelector("[data-save]");if(save)save.onclick=()=>toggleSaved(s.id);
+ card.querySelector("[data-ics]").onclick=()=>downloadICS([s]);
+ return card;
+}
+function renderList(){
+ const matches=sessions.filter(sessionMatches);$("resultCount").textContent=`${matches.length} of ${sessions.length} sessions`;
+ const root=$("sessionList");root.innerHTML="";
+ if(!matches.length){root.innerHTML='<div class="empty"><strong>No sessions found</strong>Try changing your search or clearing one or more filters.</div>';return}
+ let previous="";for(const s of matches){if(activeDay==="all"&&s.date!==previous){const h=document.createElement("h2");h.style.cssText="font-size:17px;margin:20px 0 0;color:#14263d";h.textContent=fmtDate(s.date);root.append(h);previous=s.date}root.append(renderSession(s))}
+}
+function makeCalendar(day,container){
+ const list=sessions.filter(s=>s.date===day);if(!list.length){container.innerHTML='<div class="empty"><strong>No programme data for this day</strong></div>';return}
+ const rooms=[...new Set(list.map(s=>s.room))].sort(),start=Math.min(...list.map(s=>minutes(s.start))),end=Math.max(...list.map(s=>minutes(s.end))),from=Math.floor(start/60)*60,to=Math.ceil(end/60)*60,height=(to-from)*1.15;
+ const cal=document.createElement("div");cal.className="calendar";cal.style.gridTemplateColumns=`58px repeat(${rooms.length},minmax(145px,1fr))`;
+ const head=document.createElement("div");head.className="cal-head";head.style.gridTemplateColumns=`58px repeat(${rooms.length},minmax(145px,1fr))`;head.innerHTML='<div class="blank"></div>'+rooms.map(r=>`<div>${esc(r)}</div>`).join("");
+ const body=document.createElement("div");body.className="cal-body";body.style.gridTemplateColumns=`58px repeat(${rooms.length},minmax(145px,1fr))`;body.style.height=height+"px";
+ const times=document.createElement("div");times.className="cal-times";for(let t=from;t<=to;t+=60){const e=document.createElement("div");e.className="cal-time";e.style.top=((t-from)*1.15)+"px";e.textContent=String(Math.floor(t/60)).padStart(2,"0")+":00";times.append(e)}body.append(times);
+ rooms.forEach(room=>{const lane=document.createElement("div");lane.className="cal-lane";for(const s of list.filter(x=>x.room===room)){const e=document.createElement("button");e.className="cal-event";const top=(minutes(s.start)-from)*1.15,h=(minutes(s.end)-minutes(s.start))*1.15;e.style.top=top+"px";e.style.height=Math.max(36,h-3)+"px";e.title=`${s.title} · ${timeLabel(s)}`;e.innerHTML=`<strong>${esc(s.title)}</strong><span>${esc(timeLabel(s))}</span>`;e.onclick=()=>openDetails(s);lane.append(e)}body.append(lane)});
+ cal.append(head,body);container.innerHTML="";container.append(cal);
+}
+function renderCalendarViews(){
+ const day=activeDay==="all"?DAYS[0]:activeDay;makeCalendar(day,$("calendarView"));makeCalendar(calSelected,$("fullCalendar"));$("calSummary").textContent=fmtDate(calSelected)+" · "+sessions.filter(s=>s.date===calSelected).length+" sessions across "+new Set(sessions.filter(s=>s.date===calSelected).map(s=>s.room)).size+" rooms";
+}
+let calSelected=DAYS[0];
+function setMode(v){mode=v;document.querySelectorAll("[data-mode]").forEach(b=>b.classList.toggle("active",b.dataset.mode===v));$("sessionList").classList.toggle("hidden",v!=="list");$("calendarView").classList.toggle("hidden",v!=="calendar");if(v==="calendar")renderCalendarViews()}
+function renderMine(){
+ $("savedCount").textContent=saved.size;const existing=new Map(sessions.map(s=>[s.id,s])),items=[...saved].map(id=>existing.get(id)).filter(Boolean).sort((a,b)=>a.date.localeCompare(b.date)||minutes(a.start)-minutes(b.start));
+ const stale=[...saved].filter(id=>!existing.has(id));$("mineSummary").textContent=`${saved.size} saved session${saved.size===1?"":"s"} · ${items.length} currently in the programme`;
+ $("overlapWarnings").innerHTML=stale.length?`<div class="warning"><strong>Programme update:</strong> ${stale.length} saved session${stale.length===1?" is":"s are"} no longer present in the latest published programme (${stale.map(esc).join(", ")}). Your saved selection has been retained.</div>`:"";
+ const conflicts=[];for(let i=0;i<items.length;i++)for(let j=i+1;j<items.length;j++){const a=items[i],b=items[j];if(a.date===b.date&&minutes(a.start)<minutes(b.end)&&minutes(b.start)<minutes(a.end))conflicts.push([a,b])}
+ if(conflicts.length)$("overlapWarnings").innerHTML+=conflicts.map(([a,b])=>`<div class="warning"><strong>Schedule conflict:</strong> ${esc(a.title)} (${esc(timeLabel(a))}, ${esc(a.room)}) overlaps with ${esc(b.title)} (${esc(timeLabel(b))}, ${esc(b.room)}).</div>`).join("");
+ makeDays("mineDays",mineDay,d=>{mineDay=d;renderMine()});
+ const shown=items.filter(s=>mineDay==="all"||s.date===mineDay),root=$("mineList");root.innerHTML="";
+ if(!shown.length){root.innerHTML='<div class="empty"><strong>Your agenda is empty</strong>Add sessions from the Programme view to start building your personal schedule.</div>';return}
+ let prev="";for(const s of shown){if(mineDay==="all"&&s.date!==prev){const h=document.createElement("h2");h.style.cssText="font-size:17px;margin:20px 0 0;color:#14263d";h.textContent=fmtDate(s.date);root.append(h);prev=s.date}const card=renderSession(s,false);const remove=document.createElement("button");remove.className="btn small";remove.textContent="Remove";remove.onclick=()=>toggleSaved(s.id);card.querySelector(".session-actions").append(remove);root.append(card)}
+}
+function toggleSaved(id){if(saved.has(id))saved.delete(id);else saved.add(id);persistSaved();renderList();renderMine();if(mode==="calendar")renderCalendarViews()}
+function openDetails(s){
+ lastFocus=document.activeElement;$("modalTitle").textContent=s.title;$("modalMeta").textContent=`${fmtDate(s.date)} · ${timeLabel(s)} · ${s.room} · ${s.track}`;
+ let body=`<div class="chips"><span class="chip track">${esc(s.track)}</span><span class="chip room">${esc(s.room)}</span><span class="chip type">${esc(s.type)}</span>${s.audience?`<span class="chip">${esc(s.audience)}</span>`:""}</div><p class="detail-desc">${esc(s.description||"No session description supplied.")}</p>`;
+ if(!s.presentations.length)body+="<p>No presentation details are available.</p>";
+ for(const p of s.presentations){body+=`<div class="presentation"><div class="pres-time">${esc(p.start)}–${esc(p.end)}</div><h4>${esc(p.title||"Untitled presentation")}</h4>${p.description?`<p>${esc(p.description)}</p>`:""}`;
+  if(p.participants.length){body+='<div>';for(const x of p.participants)body+=`<div class="person"><b>${esc(x.name||"Name not supplied")}</b><span>${esc(x.affiliation)}${x.affiliation&&x.role?" · ":""}${esc(x.role)}</span></div>`;body+='</div>'}else body+='<p>No participants supplied.</p>';body+="</div>"}
+ body+=`<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px"><button class="btn primary" id="modalSave">${saved.has(s.id)?"Remove from My Agenda":"Add to My Agenda"}</button><button class="btn" id="modalICS">↓ Download calendar event</button></div>`;
+ $("modalBody").innerHTML=body;$("modalSave").onclick=()=>{toggleSaved(s.id);$("modalSave").textContent=saved.has(s.id)?"Remove from My Agenda":"Add to My Agenda"};$("modalICS").onclick=()=>downloadICS([s]);$("modal").classList.add("open");$("modalClose").focus();
+}
+function closeModal(){$("modal").classList.remove("open");if(lastFocus)lastFocus.focus()}
+$("modalClose").onclick=closeModal;$("modal").addEventListener("click",e=>{if(e.target===$("modal"))closeModal()});document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+function icsEscape(s){return String(s??"").replace(/\\/g,"\\\\").replace(/\r?\n/g,"\\n").replace(/,/g,"\\,").replace(/;/g,"\\;")}
+function foldLine(line){const chunks=[];let current="",bytes=0;for(const ch of line){const n=new TextEncoder().encode(ch).length;if(bytes+n>73){chunks.push(current);current=" ";bytes=1}current+=ch;bytes+=n}chunks.push(current);return chunks.join("\r\n")}
+function downloadICS(list){
+ if(!list.length)return;
+ const lines=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Future of Events Summit 2027//Agenda//EN","CALSCALE:GREGORIAN","METHOD:PUBLISH","BEGIN:VTIMEZONE","TZID:America/Toronto","X-LIC-LOCATION:America/Toronto","BEGIN:DAYLIGHT","TZOFFSETFROM:-0500","TZOFFSETTO:-0400","TZNAME:EDT","DTSTART:19700308T020000","RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU","END:DAYLIGHT","BEGIN:STANDARD","TZOFFSETFROM:-0400","TZOFFSETTO:-0500","TZNAME:EST","DTSTART:19701101T020000","RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU","END:STANDARD","END:VTIMEZONE"];
+ for(const s of list){const dt=d=>d.replace(/-/g,"");const desc=[s.description,...s.presentations.map(p=>`${p.start}-${p.end}: ${p.title} (${p.participants.map(x=>x.name).filter(Boolean).join(", ")})`)].filter(Boolean).join("\n");lines.push("BEGIN:VEVENT",`UID:${icsEscape(s.id)}-foes27@futureofeventssummit.com`,`DTSTAMP:${new Date().toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"")}`,`DTSTART;TZID=${TZ}:${dt(s.date)}T${s.start.replace(":","")}00`,`DTEND;TZID=${TZ}:${dt(s.date)}T${s.end.replace(":","")}00`,`SUMMARY:${icsEscape(s.title)}`,`LOCATION:${icsEscape(s.room+"\, Toronto, Ontario, Canada")}`,`DESCRIPTION:${icsEscape("Future of Events Summit 2027\\n"+desc)}`,"END:VEVENT")}
+ lines.push("END:VCALENDAR");const blob=new Blob([lines.map(foldLine).join("\r\n")+"\r\n"],{type:"text/calendar;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=list.length===1?`foes-2027-${list[0].id}.ics`:"future-of-events-summit-2027-my-agenda.ics";document.body.append(a);a.click();a.remove();URL.revokeObjectURL(url);
+}
+$("downloadMine").onclick=()=>downloadICS([...saved].map(id=>sessions.find(s=>s.id===id)).filter(Boolean));
+function setTab(tab){activeTab=tab;document.querySelectorAll(".nav button").forEach(b=>b.classList.toggle("active",b.dataset.tab===tab));$("programmeView").classList.toggle("hidden",tab!=="programme");$("calendarPage").classList.toggle("hidden",tab!=="calendar");$("mineView").classList.toggle("hidden",tab!=="mine");if(tab==="calendar")renderCalendarViews();if(tab==="mine")renderMine()}
+document.querySelectorAll(".nav button").forEach(b=>b.onclick=()=>setTab(b.dataset.tab));
+document.querySelectorAll("[data-mode]").forEach(b=>b.onclick=()=>setMode(b.dataset.mode));
+["search","trackFilter","roomFilter","typeFilter","audienceFilter"].forEach(id=>$(id).addEventListener(id==="search"?"input":"change",renderList));
+function chooseProgrammeDay(d){activeDay=d;makeDays("days",activeDay,chooseProgrammeDay);renderList();if(mode==="calendar")renderCalendarViews()}
+function chooseCalendarDay(d){calSelected=d;makeDays("calDays",calSelected,chooseCalendarDay,false);renderCalendarViews()}
+$("clearFilters").onclick=()=>{$("search").value="";["trackFilter","roomFilter","typeFilter","audienceFilter"].forEach(id=>$(id).value="");chooseProgrammeDay("all")};
+function renderAll(){fillFilters();makeDays("days",activeDay,chooseProgrammeDay);makeDays("calDays",calSelected,chooseCalendarDay,false);renderList();renderCalendarViews();renderMine()}
+async function loadData(){
+ $("statusDot").className="status-dot";$("statusText").textContent="Connecting to the latest published programme…";$("refreshBtn").disabled=true;
+ try{const response=await fetch(CSV_URL,{cache:"no-store",mode:"cors"});if(!response.ok)throw Error(`The spreadsheet returned HTTP ${response.status}.`);const text=await response.text();const parsed=parseProgramme(text);if(!parsed.sessions.length)throw Error("The published programme contains no valid sessions.");sessions=parsed.sessions;renderAll();$("statusDot").className="status-dot ok";$("statusText").textContent=`Live programme loaded · ${parsed.counts.sessions} sessions · ${parsed.counts.presentations} presentations`;$("updatedAt").textContent="Retrieved "+new Intl.DateTimeFormat("en-CA",{hour:"2-digit",minute:"2-digit",timeZone:TZ}).format(new Date());if(parsed.issues.length){console.warn("Programme data validation issues:",parsed.issues);$("statusText").textContent+=` · ${parsed.issues.length} data issue(s) — see browser console`}}
+ catch(err){console.error(err);$("statusDot").className="status-dot err";$("statusText").textContent="Could not connect to the published programme. Check your connection or hosting CORS settings, then retry.";const root=$("sessionList");root.innerHTML=`<div class="empty"><strong>Programme unavailable</strong>${esc(err.message||"The published spreadsheet could not be retrieved or parsed.")}<p>Check your internet connection and confirm that the Google Sheet is published as CSV and permits cross-origin requests.</p><button class="btn primary" id="retryInline">Retry connection</button></div>`;$("retryInline").onclick=loadData}
+ finally{$("refreshBtn").disabled=false}
+}
+$("refreshBtn").onclick=loadData;
+loadData();
+</script>
+</body></html>
